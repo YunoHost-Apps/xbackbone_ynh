@@ -1,7 +1,7 @@
 <?php
 
 return array(
-    'base_url' => 'https://__DOMAIN____PATH__',
+    'base_url' => '',
     'db' => array (
         'connection' => 'mysql',
         'dsn' => 'host=localhost;port=3306;dbname=__DB_NAME__',
@@ -21,7 +21,7 @@ return array(
         'port' => 389,
         'base_domain' => 'dc=yunohost,dc=org',
         'search_filter' => '(&(|(objectclass=posixAccount))(uid={{username}})(permission=cn=__APP__.main,ou=permission,dc=yunohost,dc=org))',
-        'user_domain' => 'ou=Users',
+        'user_domain' => 'ou',
         'rdn_attribute' => 'uid',
     ),
 );
