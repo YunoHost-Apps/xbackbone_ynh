@@ -29,7 +29,7 @@ XBackBone is a simple and lightweight PHP file manager that support the instant 
 
 * Official admin documentation: <https://xbackbone.app/>
 * Upstream app code repository: <https://github.com/SergiX44/XBackBone>
-* YunoHost documentation for this app: <https://yunohost.org/app_xbackbone>
+* YunoHost Store: <https://apps.yunohost.org/app/xbackbone>
 * Report a bug: <https://github.com/YunoHost-Apps/xbackbone_ynh/issues>
 
 ## Developer info

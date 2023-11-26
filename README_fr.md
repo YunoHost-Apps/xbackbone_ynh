@@ -29,7 +29,7 @@ XBackBone est un gestionnaire de fichiers PHP simple et léger qui prend en char
 
 * Documentation officielle de l’admin : <https://xbackbone.app/>
 * Dépôt de code officiel de l’app : <https://github.com/SergiX44/XBackBone>
-* Documentation YunoHost pour cette app : <https://yunohost.org/app_xbackbone>
+* YunoHost Store: <https://apps.yunohost.org/app/xbackbone>
 * Signaler un bug : <https://github.com/YunoHost-Apps/xbackbone_ynh/issues>
 
 ## Informations pour les développeurs
