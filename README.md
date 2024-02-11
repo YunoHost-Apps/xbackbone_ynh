@@ -19,7 +19,7 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 XBackBone is a simple and lightweight PHP file manager that support the instant sharing tool ShareX and NIX systems. It supports uploading and displaying images, GIF, video, code, formatted text, pdf, and file downloading and uploading. Also have a web UI with multi user management, media gallery and search support.
 
 
-**Shipped version:** 3.6.3~ynh1
+**Shipped version:** 3.7.0~ynh1
 
 ## Screenshots
 
