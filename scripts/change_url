@@ -16,6 +16,17 @@ ynh_script_progression --message="Updating NGINX web server configuration..." --
 
 ynh_change_url_nginx_config
 
+#
+# MODIFY URL IN APP CONFIG
+#
+ynh_script_progression --message="Updating app configuration..." --weight=1
+
+# Try a sed command? nowhere near finished I'll finish it soon enough
+if [ "$new_path" == "/" ] && [ "$old_path" == "/" ]; then
+  sed 's/${old_domain//\//\\\/}/${new_domain//\//\\\/}/g'
+else
+  sed 's/${old_domain//\//\\\/}/
+
 #=================================================
 # END OF SCRIPT
 #=================================================
