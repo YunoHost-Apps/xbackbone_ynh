@@ -23,13 +23,13 @@ ynh_script_progression --message="Updating app configuration..." --weight=1
 
 # this might be a roundabout way of doing it?
 if [ "$new_path" == "/" ] && [ "$old_path" == "/" ]; then
-  sed -i 's|$old_domain|$new_domain' $install_dir/config.php
+  sed -i 's|$old_domain|$new_domain|' $install_dir/config.php
 elif [ "$new_path" == "/" ] && [ "$old_path" != "/" ]; then
-  sed -i 's|$old_domain$old_path|$new_domain'
+  sed -i 's|$old_domain$old_path|$new_domain|' $install_dir/config.php
 elif [ "$new_path" != "/" ] && [ "$old_path" == "/" ]; then
-  sed -i 's|$old_domain|$new_domain$new_path'
+  sed -i 's|$old_domain|$new_domain$new_path|' $install_dir/config.php
 elif [ "$new_path" != "/" ] && [ "$old_path" != "/" ]; then
-  sed -i 's|$old_domain$old_path|$new_domain$new_path' $install_dir/config.php
+  sed -i 's|$old_domain$old_path|$new_domain$new_path|' $install_dir/config.php
 else
   ynh_print_warn --message="Didn't match a result for old/new paths. Attempting subdomain config."
   sed -i 's|$old_domain|$new_domain' $install_dir/config.php
