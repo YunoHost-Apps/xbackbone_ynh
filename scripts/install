@@ -36,7 +36,11 @@ ynh_add_nginx_config
 #=================================================
 ynh_script_progression --message="Adding a configuration file..." --weight=1
 
-ynh_add_config --template="config.php" --destination="$install_dir/config.php"
+if [ "$path" == "/" ]; then
+  ynh_add_config --template="../conf/config-subdomain.php" --destination="$install_dir/config.php"
+else
+  ynh_add_config --template="../conf/config-withpath.php" --destination="$install_dir/config.php"
+fi
 
 chmod 400 "$install_dir/config.php"
 chown $app:$app "$install_dir/config.php"
@@ -47,7 +51,7 @@ chown $app:$app "$install_dir/config.php"
 ynh_script_progression --message="Install database" --weight=1
 
 pushd $install_dir
-	php$phpversion bin/migrate --install
+  php$phpversion bin/migrate --install
 popd
 
 #=================================================
@@ -55,3 +59,4 @@ popd
 #=================================================
 
 ynh_script_progression --message="Installation of $app completed" --last
+
