@@ -37,9 +37,9 @@ ynh_add_nginx_config
 ynh_script_progression --message="Adding a configuration file..." --weight=1
 
 if [ "$path" == "/" ]; then
-  ynh_add_config --template="../conf/config-subdomain.php" --destination="$install_dir/config.php"
+  ynh_add_config --template="config-subdomain.php" --destination="$install_dir/config.php"
 else
-  ynh_add_config --template="../conf/config-withpath.php" --destination="$install_dir/config.php"
+  ynh_add_config --template="config-withpath.php" --destination="$install_dir/config.php"
 fi
 
 chmod 400 "$install_dir/config.php"
