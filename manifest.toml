@@ -5,9 +5,9 @@ name = "XBackBone"
 description.en = "Lightweight file manager with full ShareX support"
 description.fr = "Gestionnaire de fichiers léger avec prise en charge de ShareX"
 
-version = "3.6.3~ynh1"
+version = "3.7.0~ynh1"
 
-maintainers = ["eric_G"]
+maintainers = []
 
 [upstream]
 license = "AGPL-3.0"
@@ -39,8 +39,8 @@ ram.runtime = "50M"
 
 [resources]
         [resources.sources.main]
-        url = "https://github.com/SergiX44/XBackBone/releases/download/3.6.3/release-v3.6.3.zip"
-        sha256 = "ac1b09a2c262714646d1593b131bcc6a88b836204b0ee02b8879b0e2c386678f"
+        url = "https://github.com/SergiX44/XBackBone/releases/download/3.7.0/release-v3.7.0.zip"
+        sha256 = "df35a21eec883b43baac968ed4bc28b3a4c0b491b0d0c4c2325ab38d69a1ff98"
         in_subdir = false
 
     [resources.system_user]

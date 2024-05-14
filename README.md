@@ -9,7 +9,7 @@ It shall NOT be edited by hand.
 
 [![Install XBackBone with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=xbackbone)
 
-*[Read this README is other languages.](./ALL_README.md)*
+*[Read this README in other languages.](./ALL_README.md)*
 
 > *This package allows you to install XBackBone quickly and simply on a YunoHost server.*  
 > *If you don't have YunoHost, please consult [the guide](https://yunohost.org/install) to learn how to install it.*
@@ -19,7 +19,7 @@ It shall NOT be edited by hand.
 XBackBone is a simple and lightweight PHP file manager that support the instant sharing tool ShareX and NIX systems. It supports uploading and displaying images, GIF, video, code, formatted text, pdf, and file downloading and uploading. Also have a web UI with multi user management, media gallery and search support.
 
 
-**Shipped version:** 3.6.3~ynh1
+**Shipped version:** 3.7.0~ynh1
 
 ## Screenshots
 
