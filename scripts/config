@@ -62,12 +62,11 @@ get__prices() {
     fi
 }
 
-
 #=================================================
 # SPECIFIC VALIDATORS FOR TOML SHORT KEYS
 #=================================================
-validate__publishable_key() {
 
+validate__publishable_key() {
     # We can imagine here we test if the key is really a publisheable key
     (is_secret_key $publishable_key) &&
         echo 'This key seems to be a secret key'
