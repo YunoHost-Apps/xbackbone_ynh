@@ -19,8 +19,11 @@ fund = "https://xbackbone.app/sponsor.html"
 yunohost = ">= 11.2"
 architectures = "all"
 multi_instance = true
+
 ldap = false
+
 sso = false
+
 disk = "50M"
 ram.build = "50M"
 ram.runtime = "50M"
@@ -42,7 +45,9 @@ ram.runtime = "50M"
         url = "https://github.com/SergiX44/XBackBone/releases/download/3.7.0/release-v3.7.0.zip"
         sha256 = "df35a21eec883b43baac968ed4bc28b3a4c0b491b0d0c4c2325ab38d69a1ff98"
         in_subdir = false
-
+        autoupdate.strategy = "latest_github_release"
+        autoupdate.asset = "^release-.*zip"
+        
     [resources.system_user]
 
     [resources.install_dir]
