@@ -5,7 +5,9 @@ It shall NOT be edited by hand.
 
 # XBackBone for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/xbackbone.svg)](https://dash.yunohost.org/appci/app/xbackbone) ![Working status](https://ci-apps.yunohost.org/ci/badges/xbackbone.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/xbackbone.maintain.svg)
+[![Integration level](https://apps.yunohost.org/badge/integration/xbackbone)](https://ci-apps.yunohost.org/ci/apps/xbackbone/)
+![Working status](https://apps.yunohost.org/badge/state/xbackbone)
+![Maintenance status](https://apps.yunohost.org/badge/maintained/xbackbone)
 
 [![Install XBackBone with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=xbackbone)
 

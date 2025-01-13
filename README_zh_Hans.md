@@ -5,7 +5,9 @@
 
 # YunoHost 上的 XBackBone
 
-[![集成程度](https://dash.yunohost.org/integration/xbackbone.svg)](https://dash.yunohost.org/appci/app/xbackbone) ![工作状态](https://ci-apps.yunohost.org/ci/badges/xbackbone.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/xbackbone.maintain.svg)
+[![集成程度](https://apps.yunohost.org/badge/integration/xbackbone)](https://ci-apps.yunohost.org/ci/apps/xbackbone/)
+![工作状态](https://apps.yunohost.org/badge/state/xbackbone)
+![维护状态](https://apps.yunohost.org/badge/maintained/xbackbone)
 
 [![使用 YunoHost 安装 XBackBone](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=xbackbone)
 
