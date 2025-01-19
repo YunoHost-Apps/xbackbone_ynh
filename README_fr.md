@@ -21,7 +21,7 @@ Il NE doit PAS être modifié à la main.
 XBackBone est un gestionnaire de fichiers PHP simple et léger qui prend en charge l'outil de partage instantané des systèmes ShareX et NIX. Il prend en charge le téléchargement et l'affichage d'images, GIF, vidéo, code, texte formaté, pdf et téléchargement et téléchargement de fichiers. Disposez également d'une interface utilisateur Web avec gestion multi-utilisateurs, galerie multimédia et prise en charge de la recherche.
 
 
-**Version incluse :** 3.7.0~ynh1
+**Version incluse :** 3.8.0~ynh1
 
 ## Captures d’écran
 
