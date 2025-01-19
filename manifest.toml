@@ -1,3 +1,5 @@
+#:schema https://raw.githubusercontent.com/YunoHost/apps/master/schemas/manifest.v2.schema.json
+
 packaging_format = 2
 
 id = "xbackbone"
@@ -5,7 +7,7 @@ name = "XBackBone"
 description.en = "Lightweight file manager with full ShareX support"
 description.fr = "Gestionnaire de fichiers léger avec prise en charge de ShareX"
 
-version = "3.7.0~ynh1"
+version = "3.8.0~ynh1"
 
 maintainers = []
 
@@ -16,11 +18,14 @@ code = "https://github.com/SergiX44/XBackBone"
 fund = "https://xbackbone.app/sponsor.html"
 
 [integration]
-yunohost = ">= 11.2"
+yunohost = ">= 11.2.30"
 architectures = "all"
 multi_instance = true
+
 ldap = false
+
 sso = false
+
 disk = "50M"
 ram.build = "50M"
 ram.runtime = "50M"
@@ -38,10 +43,13 @@ ram.runtime = "50M"
     default = "visitors"
 
 [resources]
-        [resources.sources.main]
-        url = "https://github.com/SergiX44/XBackBone/releases/download/3.7.0/release-v3.7.0.zip"
-        sha256 = "df35a21eec883b43baac968ed4bc28b3a4c0b491b0d0c4c2325ab38d69a1ff98"
-        in_subdir = false
+    [resources.sources.main]
+    url = "https://github.com/SergiX44/XBackBone/releases/download/3.8.0/release-v3.8.0.zip"
+    sha256 = "0cb255171c25a908b7dee324c267f30b0dde015d5db57dc47c798c7dda0e62cd"
+    in_subdir = false
+
+    autoupdate.strategy = "latest_github_release"
+    autoupdate.asset = "release-v.*.zip"
 
     [resources.system_user]
 
