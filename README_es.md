@@ -5,7 +5,9 @@ No se debe editar a mano.
 
 # XBackBone para Yunohost
 
-[![Nivel de integración](https://dash.yunohost.org/integration/xbackbone.svg)](https://dash.yunohost.org/appci/app/xbackbone) ![Estado funcional](https://ci-apps.yunohost.org/ci/badges/xbackbone.status.svg) ![Estado En Mantención](https://ci-apps.yunohost.org/ci/badges/xbackbone.maintain.svg)
+[![Nivel de integración](https://apps.yunohost.org/badge/integration/xbackbone)](https://ci-apps.yunohost.org/ci/apps/xbackbone/)
+![Estado funcional](https://apps.yunohost.org/badge/state/xbackbone)
+![Estado En Mantención](https://apps.yunohost.org/badge/maintained/xbackbone)
 
 [![Instalar XBackBone con Yunhost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=xbackbone)
 
@@ -19,7 +21,7 @@ No se debe editar a mano.
 XBackBone is a simple and lightweight PHP file manager that support the instant sharing tool ShareX and NIX systems. It supports uploading and displaying images, GIF, video, code, formatted text, pdf, and file downloading and uploading. Also have a web UI with multi user management, media gallery and search support.
 
 
-**Versión actual:** 3.7.0~ynh1
+**Versión actual:** 3.8.1~ynh1
 
 ## Capturas
 
@@ -34,7 +36,7 @@ XBackBone is a simple and lightweight PHP file manager that support the instant 
 
 ## Información para desarrolladores
 
-Por favor enviar sus correcciones a la [`branch testing`](https://github.com/YunoHost-Apps/xbackbone_ynh/tree/testing
+Por favor enviar sus correcciones a la [rama `testing`](https://github.com/YunoHost-Apps/xbackbone_ynh/tree/testing).
 
 Para probar la rama `testing`, sigue asÍ:
 

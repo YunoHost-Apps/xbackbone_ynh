@@ -5,7 +5,9 @@ Il NE doit PAS être modifié à la main.
 
 # XBackBone pour YunoHost
 
-[![Niveau d’intégration](https://dash.yunohost.org/integration/xbackbone.svg)](https://dash.yunohost.org/appci/app/xbackbone) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/xbackbone.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/xbackbone.maintain.svg)
+[![Niveau d’intégration](https://apps.yunohost.org/badge/integration/xbackbone)](https://ci-apps.yunohost.org/ci/apps/xbackbone/)
+![Statut du fonctionnement](https://apps.yunohost.org/badge/state/xbackbone)
+![Statut de maintenance](https://apps.yunohost.org/badge/maintained/xbackbone)
 
 [![Installer XBackBone avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=xbackbone)
 
@@ -19,7 +21,7 @@ Il NE doit PAS être modifié à la main.
 XBackBone est un gestionnaire de fichiers PHP simple et léger qui prend en charge l'outil de partage instantané des systèmes ShareX et NIX. Il prend en charge le téléchargement et l'affichage d'images, GIF, vidéo, code, texte formaté, pdf et téléchargement et téléchargement de fichiers. Disposez également d'une interface utilisateur Web avec gestion multi-utilisateurs, galerie multimédia et prise en charge de la recherche.
 
 
-**Version incluse :** 3.7.0~ynh1
+**Version incluse :** 3.8.1~ynh1
 
 ## Captures d’écran
 

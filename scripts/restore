@@ -18,6 +18,13 @@ ynh_script_progression "Restoring the data directory..."
 ynh_restore "$data_dir"
 
 #=================================================
+# RESTORE THE MYSQL DATABASE
+#=================================================
+ynh_script_progression --message="Restoring the MySQL database..." --weight=2
+
+ynh_mysql_connect_as --user="$db_user" --password="$db_pwd" --database="$db_name" < ./db.sql
+
+#=================================================
 # RESTORE THE PHP-FPM CONFIGURATION
 #=================================================
 ynh_script_progression "Restoring the PHP-FPM configuration..."

@@ -5,7 +5,9 @@ EZ editatu eskuz.
 
 # XBackBone YunoHost-erako
 
-[![Integrazio maila](https://dash.yunohost.org/integration/xbackbone.svg)](https://dash.yunohost.org/appci/app/xbackbone) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/xbackbone.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/xbackbone.maintain.svg)
+[![Integrazio maila](https://apps.yunohost.org/badge/integration/xbackbone)](https://ci-apps.yunohost.org/ci/apps/xbackbone/)
+![Funtzionamendu egoera](https://apps.yunohost.org/badge/state/xbackbone)
+![Mantentze egoera](https://apps.yunohost.org/badge/maintained/xbackbone)
 
 [![Instalatu XBackBone YunoHost-ekin](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=xbackbone)
 
@@ -19,7 +21,7 @@ EZ editatu eskuz.
 XBackBone is a simple and lightweight PHP file manager that support the instant sharing tool ShareX and NIX systems. It supports uploading and displaying images, GIF, video, code, formatted text, pdf, and file downloading and uploading. Also have a web UI with multi user management, media gallery and search support.
 
 
-**Paketatutako bertsioa:** 3.7.0~ynh1
+**Paketatutako bertsioa:** 3.8.1~ynh1
 
 ## Pantaila-argazkiak
 
