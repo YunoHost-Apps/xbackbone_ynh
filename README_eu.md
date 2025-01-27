@@ -21,7 +21,7 @@ EZ editatu eskuz.
 XBackBone is a simple and lightweight PHP file manager that support the instant sharing tool ShareX and NIX systems. It supports uploading and displaying images, GIF, video, code, formatted text, pdf, and file downloading and uploading. Also have a web UI with multi user management, media gallery and search support.
 
 
-**Paketatutako bertsioa:** 3.8.0~ynh1
+**Paketatutako bertsioa:** 3.8.1~ynh1
 
 ## Pantaila-argazkiak
 
