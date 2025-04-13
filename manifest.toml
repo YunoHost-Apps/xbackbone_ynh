@@ -7,7 +7,7 @@ name = "XBackBone"
 description.en = "Lightweight file manager with full ShareX support"
 description.fr = "Gestionnaire de fichiers léger avec prise en charge de ShareX"
 
-version = "3.8.1~ynh1"
+version = "3.8.1~ynh2"
 
 maintainers = []
 
@@ -24,6 +24,7 @@ architectures = "all"
 multi_instance = true
 
 ldap = true
+
 sso = false
 
 disk = "50M"
