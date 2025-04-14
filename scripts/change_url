@@ -23,6 +23,15 @@ ynh_script_progression "Modifying a configuration file..."
 ynh_config_add --template="config.php" --destination="$install_dir/config.php"
 
 #=================================================
+# XBACKBONE UPGRADE
+#=================================================
+ynh_script_progression "Install database"
+
+pushd $install_dir
+	php$php_version bin/clean
+popd
+
+#=================================================
 # END OF SCRIPT
 #=================================================
 
