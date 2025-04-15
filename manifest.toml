@@ -7,7 +7,7 @@ name = "XBackBone"
 description.en = "Lightweight file manager with full ShareX support"
 description.fr = "Gestionnaire de fichiers léger avec prise en charge de ShareX"
 
-version = "3.8.1~ynh1"
+version = "3.8.1~ynh2"
 
 maintainers = []
 
@@ -18,11 +18,12 @@ code = "https://github.com/SergiX44/XBackBone"
 fund = "https://xbackbone.app/sponsor.html"
 
 [integration]
-yunohost = ">= 11.2.30"
+yunohost = ">= 12.0.9"
+helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
 
-ldap = false
+ldap = true
 
 sso = false
 
@@ -54,6 +55,7 @@ ram.runtime = "50M"
     [resources.system_user]
 
     [resources.install_dir]
+    group = "www-data:r-x"
 
     [resources.data_dir]
 

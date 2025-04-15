@@ -1,8 +1,6 @@
 #!/bin/bash
 
 #=================================================
-# GENERIC START
-#=================================================
 # IMPORT GENERIC HELPERS
 #=================================================
 
@@ -10,48 +8,50 @@ source _common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
+# INITIALIZE AND STORE SETTINGS
+#=================================================
+
+ynh_app_setting_set --key=php_upload_max_filesize --value=1G
+
+#=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
-ynh_script_progression --message="Setting up source files..." --weight=1
+ynh_script_progression "Setting up source files..."
 
+# Download, check integrity, uncompress and patch the source from manifest.toml
 ynh_setup_source --dest_dir="$install_dir"
 
 mkdir "$install_dir/storage"
 
-chown -R $app:www-data "$install_dir"
+#=================================================
+# APP INITIAL CONFIGURATION
+#=================================================
+ynh_script_progression "Adding $app's configuration files..."
+
+ynh_config_add --template="config.php" --destination="$install_dir/config.php"
 
 #=================================================
-# PHP-FPM CONFIGURATION
+# SYSTEM CONFIGURATION
 #=================================================
-ynh_script_progression --message="Configuring PHP-FPM..." --weight=1
+ynh_script_progression "Adding system configurations related to $app..."
 
-# Create a dedicated PHP-FPM config
-ynh_add_fpm_config
+# Create a PHP-FPM config (with conf/extra_php-fpm.conf being appended to it)
+ynh_config_add_phpfpm
 
-# Create a dedicated NGINX config
-ynh_add_nginx_config
-
-#=================================================
-# ADD A CONFIGURATION
-#=================================================
-ynh_script_progression --message="Adding a configuration file..." --weight=1
-
-ynh_add_config --template="config.php" --destination="$install_dir/config.php"
-
-chmod 400 "$install_dir/config.php"
-chown $app:$app "$install_dir/config.php"
+# Create a dedicated NGINX config using the conf/nginx.conf template
+ynh_config_add_nginx
 
 #=================================================
 # FINAL BOOKSTACK INSTALL
 #=================================================
-ynh_script_progression --message="Install database" --weight=1
+ynh_script_progression "Install database"
 
 pushd $install_dir
-	php$phpversion bin/migrate --install
+	php$php_version bin/migrate --install
 popd
 
 #=================================================
 # END OF SCRIPT
 #=================================================
 
-ynh_script_progression --message="Installation of $app completed" --last
+ynh_script_progression "Installation of $app completed"
