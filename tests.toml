@@ -9,3 +9,13 @@ test_format = 1.0
     # ------------
 
     exclude = ["install.root"]
+
+    # -------------------------------
+    # Default args to use for install
+    # -------------------------------
+
+    # -------------------------------
+    # Commits to test upgrade from
+    # -------------------------------
+
+    test_upgrade_from.42dc4c1386ad00006ebf0414a70eae3ead632bbf.name = "Upgrade from 3.8.1~ynh1"
