@@ -7,7 +7,7 @@ name = "XBackBone"
 description.en = "Lightweight file manager with full ShareX support"
 description.fr = "Gestionnaire de fichiers léger avec prise en charge de ShareX"
 
-version = "3.8.1~ynh2"
+version = "3.8.2~ynh1"
 
 maintainers = []
 
@@ -45,8 +45,8 @@ ram.runtime = "50M"
 
 [resources]
     [resources.sources.main]
-    url = "https://github.com/sergix44/XBackBone/releases/download/3.8.1/release-v3.8.1.zip"
-    sha256 = "aa605479c51f52060fd08afae9a2d02fc7e761bf216ddbe5ef879692cf2afb8a"
+    url = "https://github.com/sergix44/xbackbone/releases/download/3.8.2/release-v3.8.2.zip"
+    sha256 = "c2908c68618dd14dda8b4468ebc86c09befa789bc3e7e4b817f26fd8f6499c47"
     in_subdir = false
 
     autoupdate.strategy = "latest_github_release"
