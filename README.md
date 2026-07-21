@@ -4,18 +4,22 @@ It shall NOT be edited by hand.
 -->
 
 <h1>
-  <img src="https://raw.githubusercontent.com/YunoHost/apps/master/logos/xbackbone.png" width="32px" alt="Logo of XBackBone">
+  <img src="https://raw.githubusercontent.com/YunoHost/apps/main/logos/xbackbone.png" width="32px" alt="Logo of XBackBone">
   XBackBone, packaged for YunoHost
 </h1>
 
 Lightweight file manager with full ShareX support
 
-![Version: 3.8.1~ynh2](https://img.shields.io/badge/Version-3.8.1~ynh2-rgba(0,150,0,1)?style=for-the-badge)
+[![Version: 3.8.2~ynh1](https://img.shields.io/badge/Version-3.8.2~ynh1-rgb(18,138,11)?style=for-the-badge)](https://ci-apps.yunohost.org/ci/apps/xbackbone/)
 
 <div align="center">
 <a href="https://apps.yunohost.org/app/xbackbone"><img height="100px" src="https://github.com/YunoHost/yunohost-artwork/raw/refs/heads/main/badges/neopossum-badges/badge_more_info_on_the_appstore.svg"/></a>
 <a href="https://github.com/YunoHost-Apps/xbackbone_ynh/issues"><img height="100px" src="https://github.com/YunoHost/yunohost-artwork/raw/refs/heads/main/badges/neopossum-badges/badge_report_an_issue.svg"/></a>
 </div>
+
+
+## Screenshots
+![Screenshot of XBackBone](./doc/screenshots/screenshot.png)
 
 ## 📦 Developer info
 
